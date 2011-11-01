@@ -1,0 +1,28 @@
+table
+{
+	border-collapse: collapse;
+}
+
+td
+{
+	border: 1px solid black;
+	text-align: center;
+	height: 100px;
+	width: 100px;
+}
+
+th
+{
+	border: 1px solid black;
+	height: 100px;
+	width: 100px;
+}
+
+.caseGrise
+{
+	background-color: grey;
+}
+
+.caseBlanche
+{
+}
