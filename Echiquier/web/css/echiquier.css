@@ -16,6 +16,7 @@ div #echiquier
     border: 1px solid black;
     height: 10%;
     width: 10%;
+    text-align: center;
 }
 
 #echiquier tr th
