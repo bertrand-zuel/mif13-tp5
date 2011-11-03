@@ -28,15 +28,10 @@ function mettreEnPlace()
         
         $("td").each(function(){
             $(this).droppable({
-            drop: function(event,ui)
-            {
-                $(this).html(' ');
-                ui.draggable.appendTo( $(this) )
-                    .css({
-                        left: '0px',
-                        top:  '0px'
-                    })
-            }
+                drop: function(event,ui){
+                    $(this).html(' ');
+                    ui.draggable.appendTo($(this)).css({left: '0px', top:  '0px'})
+                }
             })
         });  
         
