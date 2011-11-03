@@ -9,13 +9,15 @@ and open the template in the editor.
 	<link rel="stylesheet" href="css/echiquier.css" />
         <script src="js/jQuery.js"></script>
         <script src="js/fonctions.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 	<title>Echiquier</title>	
     </head>
     <body>
 	<!-- Construction de l'échiquier -->
         
+        <input id="btnInit" name="btnInit" value="Initialiser" type="button"/><br/><br/>
         
-	<div>
+	<div id ="draggable">
             <table id="echiquier">
                 <tr class="pair">
                     <th>8</th>
@@ -117,7 +119,40 @@ and open the template in the editor.
                     <th>H</th>
                 </tr>
             </table>
+            
+            <img class="piece" src="./images/Canasson_blanc.png" alt="Canasson Blanc 1" id="cb1" style="display:none" />
+            <img class="piece" src="./images/Canasson_blanc.png" alt="Canasson Blanc 2" id="cb2" style="display:none" />
+            <img class="piece" src="./images/Dame_blanc.png" alt="Dame Blanc" id="db" style="display:none" />
+            <img class="piece" src="./images/Fou_blanc.png" alt="Fou Blanc 1" id="fb1" style="display:none" />
+            <img class="piece" src="./images/Fou_blanc.png" alt="Fou Blanc 2" id="fb2" style="display:none" />
+            <img class="piece" src="./images/Roi_blanc.png" alt="Roi Blanc" id="rb" style="display:none" />
+            <img class="piece" src="./images/Tour_blanc.png" alt="Tour Blanc 1" id="tb1" style="display:none" />
+            <img class="piece" src="./images/Tour_blanc.png" alt="Tour Blanc 2" id="tb2" style="display:none" />
+            <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 1" id="pb1" style="display:none" />
+            <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 2" id="pb2" style="display:none" />
+            <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 3" id="pb3" style="display:none" />
+            <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 4" id="pb4" style="display:none" />
+            <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 4" id="pb5"/>
+            <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 6" id="pb6" style="display:none" />
+            <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 7" id="pb7" style="display:none" />
+            <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 8" id="pb8" style="display:none" />
 
+            <img class="piece" src="./images/Canasson_noir.png" alt="Canasson Noir" id="cn1" style="display:none" />
+            <img class="piece" src="./images/Canasson_noir.png" alt="Canasson Noir" id="cn2" style="display:none" />
+            <img class="piece" src="./images/Dame_noir.png" alt="Dame Noir" id="dn" style="display:none" />
+            <img class="piece" src="./images/Fou_noir.png" alt="Fou Noir" id="fn1" style="display:none" />
+            <img class="piece" src="./images/Fou_noir.png" alt="Fou Noir" id="fn2" style="display:none" />
+            <img class="piece" src="./images/Roi_noir.png" alt="Roi Noir" id="rn" style="display:none" />
+            <img class="piece" src="./images/Tour_noir.png" alt="Tour Noir" id="tn1" style="display:none" />
+            <img class="piece" src="./images/Tour_noir.png" alt="Tour Noir" id="tn2" style="display:none" />
+            <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir" id="pn1" style="display:none" />
+            <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir" id="pn2" style="display:none" />
+            <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 3" id="pn3" style="display:none" />
+            <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 4" id="pn4" style="display:none" />
+            <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 4" id="pn5" style="display:none" />
+            <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 6" id="pn6" style="display:none" />
+            <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 7" id="pn7" style="display:none" />
+            <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 8" id="pn8" style="display:none" />
         </div>
     </body>
 </html>
