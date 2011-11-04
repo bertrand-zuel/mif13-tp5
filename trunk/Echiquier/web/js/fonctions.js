@@ -34,5 +34,5 @@ function mettreEnPlace()
                     ui.draggable.appendTo($(this)).css({left: '0px', top:  '0px'})
                 }
             })
-        });       
+        });
 }
