@@ -9,9 +9,10 @@
         <script src="js/jQuery.js"></script>
         <script src="js/fonctions.js"></script>
         <script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+        <script src="js/ajax.js"></script>
 	<title>Echiquier</title>	
     </head>
-    <body>
+    <body onload="loadXMLAsynchroneously('POST', 'gestion/tour.jsp', null, null);">
 	<!-- Construction de l'échiquier -->
                 
 	<div id ="draggable">
