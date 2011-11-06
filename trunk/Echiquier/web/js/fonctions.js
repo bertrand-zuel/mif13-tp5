@@ -17,6 +17,9 @@ function mettreEnPlace(XMLDoc)
 {
         // Décommente si tu veux voir la gueule du XML en alert, sinon tu peux aller sur http://localhost:8080/Echiquier/gestion/tour.jsp
         //alert((new XMLSerializer()).serializeToString(XMLDoc));
+        
+        alert("ok");
+        
 	// Taille d'une image en fonction de la taille de notre échiquier
 	var largeurCellule = $('#echiquier').attr('width') * 0.085;
 	var hauteurCellule = $('#echiquier').attr('height') * 0.085;
@@ -37,4 +40,12 @@ function mettreEnPlace(XMLDoc)
                 }
             })
         });
+        
+        //Pour le rafraichissement
+        //rafraichissement();
+}
+
+function rafraichissement()
+{
+    setTimeout("loadXMLAsynchroneously('POST', '../gestion/tour.jsp', null, null);", 1000);
 }
