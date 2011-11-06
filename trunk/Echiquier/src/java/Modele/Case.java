@@ -1,14 +1,13 @@
 package Modele;
 
 public class Case {
-    private int occupee; /* 0 non occupée, 1 occupée */
-    private char couleurPiece; /* Si pièce dessus, b ou n */
+    private String couleurPiece; /* Si pièce dessus, b ou n */
     private String idCase;
     private String idPiece;
     
-    public Case(String idCase, int occupee){
+    public Case(String idCase, String idPiece){
         this.idCase = idCase;
-        this.occupee = occupee;
+        this.idPiece = idPiece;
     }
     
     public String getIdCase(){
@@ -17,5 +16,17 @@ public class Case {
     
     public String getIdPiece(){
         return this.idPiece;
+    }
+    
+    public String getCouleurPiece(){
+        return this.couleurPiece;
+    }
+    
+    public void setCouleurPiece(String couleur){
+        this.couleurPiece = couleur;
+    }
+    
+    public String caseToXml(){
+        return "<case id=\""+this.idCase+"\">"+this.idPiece+"</case>";
     }
 }
