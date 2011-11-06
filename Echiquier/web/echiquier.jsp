@@ -1,3 +1,7 @@
+<%@page import="Modele.Joueur"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:useBean id="cP" scope="application" class="Controleur.ControlePartie"/>
+<jsp:useBean id="echiquier" scope="application" class="Modele.Echiquier"/>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -176,8 +180,14 @@
                     <th>H</th>
                 </tr>
             </table>
-            
-            
+        </div>
+        
+        <div id="info">
+<%  out.println("Votre pseudo : "+session.getAttribute("pseudo")+"<br />");
+    out.println("Votre couleur : "+session.getAttribute("couleur")+"<br />");
+    Joueur moi = cP.getJoueur((String)session.getAttribute("pseudo"));
+    out.println("Je peux jouer? "+cP.peutJouer(moi));
+%>
         </div>
     </body>
 </html>

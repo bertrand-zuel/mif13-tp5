@@ -11,24 +11,31 @@
     <%
         String couleur = null;
         String pseudo = null;
+        int nbJoueurs = cP.getNbJoueurs();
+
     
         if(request.getMethod().equalsIgnoreCase("post"))
         {
             pseudo = request.getParameter("pseudo");
             couleur = request.getParameter("couleur");
-        }
             
-        if(couleur != null && couleur != "")
-        {
-            Joueur joueur = new Joueur(pseudo, couleur);
-            cP.ajouterJoueur(joueur);
-            response.sendRedirect("echiquier.xhtml");
-        }
-        
-        int nbJoueurs = cP.getNbJoueurs();
+            if(couleur != null && couleur != "" && nbJoueurs < 2)
+            {
+                Joueur joueur = new Joueur(pseudo, couleur);
+                cP.ajouterJoueur(joueur);
+                session.setAttribute("pseudo", pseudo);
+                session.setAttribute("couleur", couleur);
+                response.sendRedirect("echiquier.jsp");
+            }
+            else
+            {
+                response.sendRedirect("index.jsp");
+            }
+        } 
+       
         String couleurChoisie = null;
         Joueur joueur1 = null;
-        
+
         if(nbJoueurs == 1)
         {
             joueur1 = cP.getJoueur(0);
