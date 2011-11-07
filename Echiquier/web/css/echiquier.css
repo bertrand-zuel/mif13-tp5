@@ -1,3 +1,19 @@
+#divechiquier
+{
+    float : left;
+}
+
+#bandeauTitre
+{
+    text-align: center;
+}
+
+#info
+{
+    text-align: center;
+    vertical-align: center;
+}
+
 div #echiquier
 {
     border-collapse: collapse;
