@@ -58,9 +58,7 @@ function getXMLDocument(xhr, XMLDoc, id)
 			//alert((new XMLSerializer()).serializeToString(XMLDoc));
 			
 			//appel de la fonction de traitement qui va ajouter les donnÈes au corps de la page (‡ Ècrire)
-                        //################### Ici modif sur de traiteXML
-			//mettreEnPlace(XMLDoc);
-                        traiteXML(XMLDoc, id);
+			mettreEnPlace(XMLDoc);
 		
 		//teste si le code de statut est autre que le code renvoyÈ en cas d'absence de nouveaux messages.
 		//Remarque : le code 1223 provient d'un bug avec IE : http://trac.dojotoolkit.org/ticket/2418
@@ -117,20 +115,4 @@ function getXMLTextContent(source)
 		//IE
 		return source.text;
 	}
-}
-
-//fonction qui traite le xml envoyé
-function traiteXML(XMLDoc, id)
-{  
-//    var pseudo = XMLDoc.getElementsByTagName("joueur")[0].firstChild.nodeValue;
-//    var peutJouer = XMLDoc.getElementsByTagName("peutjouer")[0].firstChild.nodeValue;
-//    var echiquier = XMLDoc.getElementsByTagName("echiquier");
-//    var nbCases = echiquier[0].childNodes.length;
-//    for(var i = 0; i < nbCases; i++)
-//    {
-//        if(echiquier[0].childNodes[i].hasChildNodes())
-//            idPiece = echiquier[0].childNodes[i].firstChild.nodeValue;
-//        
-//        idCase = echiquier[0].childNodes[i].getAttribute("id");
-//    }
 }
