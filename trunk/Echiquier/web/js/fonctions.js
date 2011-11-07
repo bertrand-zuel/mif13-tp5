@@ -35,7 +35,7 @@ function mettreEnPlace(XMLDoc)
                     //On rajoute la nouvelle image
                     ui.draggable.appendTo($(this)).css({left: '0px', top:  '0px'})
                     var caseCible = $(this).attr('id');
-                    var idPieceDep = $(this).children('img').attr('id'); 
+                    var idPieceDep = $(this).children('img').attr('id');
                     sendRequestAsynchroneously('POST', 'gestion/deplacement.jsp', "idPiece="+idPieceDep+"&idCaseCible="+caseCible);
                 }
                 else                
