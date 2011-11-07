@@ -14,8 +14,8 @@
     </head>
     <body onload="loadXMLAsynchroneously('POST', 'gestion/tour.jsp', null, null);">
 	<!-- Construction de l'échiquier -->
-                
-	<div id ="draggable">
+        <div id="bandeauTitre"><h1>Jeu d'échecs</h1></div>         
+	<div id ="divechiquier">
             <table id="echiquier">
                 <tr class="pair">
                     <th>8</th>
@@ -120,11 +120,11 @@
         </div>
         
         <div id="info">
-<%  out.println("Votre pseudo : "+session.getAttribute("pseudo")+"<br />");
-    out.println("Votre couleur : "+session.getAttribute("couleur")+"<br />");
-    Joueur moi = cP.getJoueur((String)session.getAttribute("pseudo"));
-    out.println("Je peux jouer? "+cP.peutJouer(moi));
-%>
+            <%  out.println("Votre pseudo : "+session.getAttribute("pseudo")+"<br />");
+                out.println("Votre couleur : "+session.getAttribute("couleur")+"<br />");
+                Joueur moi = cP.getJoueur((String)session.getAttribute("pseudo"));
+                out.println("Je peux jouer? "+cP.peutJouer(moi));
+            %>
         </div>
     </body>
 </html>
