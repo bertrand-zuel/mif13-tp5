@@ -19,57 +19,25 @@
             <table id="echiquier">
                 <tr class="pair">
                     <th>8</th>
-                    <td id="A8" class="caseBlanche">
-                        <img class="piece" src="./images/Tour_noir.png" alt="Tour Noir 1" id="tn1" />
-                    </td>
-                    <td id="B8" class="caseGrise">
-                        <img class="piece" src="./images/Canasson_noir.png" alt="Canasson Noir 1" id="cn1" />
-                    </td>
-                    <td id="C8" class="caseBlanche">
-                        <img class="piece" src="./images/Fou_noir.png" alt="Fou Noir 2" id="fn1" />
-                    </td>
-                    <td id="D8" class="caseGrise">
-                        <img class="piece" src="./images/Dame_noir.png" alt="Dame Noir" id="dn" />
-                    </td>
-                    <td id="E8" class="caseBlanche">     
-                        <img class="piece" src="./images/Roi_noir.png" alt="Roi Noir" id="rn" />
-                    </td>
-                    <td id="F8" class="caseGrise">
-                        <img class="piece" src="./images/Fou_noir.png" alt="Fou Noir 2" id="fn2" />
-                    </td>
-                    <td id="G8" class="caseBlanche">
-                        <img class="piece" src="./images/Canasson_noir.png" alt="Canasson Noir 2" id="cn2" />
-                    </td>
-                    <td id="H8" class="caseGrise">
-                        <img class="piece" src="./images/Tour_noir.png" alt="Tour Noir 2" id="tn2" />
-                    </td>
+                    <td id="A8" class="caseBlanche"></td>
+                    <td id="B8" class="caseGrise"></td>
+                    <td id="C8" class="caseBlanche"></td>
+                    <td id="D8" class="caseGrise"></td>
+                    <td id="E8" class="caseBlanche"></td>
+                    <td id="F8" class="caseGrise"></td>
+                    <td id="G8" class="caseBlanche"></td>
+                    <td id="H8" class="caseGrise"></td>
                 </tr>
                 <tr class="impair">
                     <th>7</th>
-                    <td id="A7" class="caseGrise">
-                        <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 1" id="pn1"/>
-                    </td>
-                    <td id="B7" class="caseBlanche">
-                        <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 2" id="pn2"/>
-                    </td>
-                    <td id="C7" class="caseGrise">
-                        <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 3" id="pn3"/>
-                    </td>
-                    <td id="D7" class="caseBlanche">
-                        <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 4" id="pn4"/>
-                    </td>
-                    <td id="E7" class="caseGrise">
-                        <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 5" id="pn5"/>
-                    </td>
-                    <td id="F7" class="caseBlanche">
-                        <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 6" id="pn6"/>
-                    </td>
-                    <td id="G7" class="caseGrise">
-                        <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 7" id="pn7"/>
-                    </td>
-                    <td id="H7" class="caseBlanche">
-                        <img class="piece" src="./images/Pion_noir.png" alt="Pion Noir 8" id="pn8"/>
-                    </td>
+                    <td id="A7" class="caseGrise"></td>
+                    <td id="B7" class="caseBlanche"></td>
+                    <td id="C7" class="caseGrise"></td>
+                    <td id="D7" class="caseBlanche"></td>
+                    <td id="E7" class="caseGrise"></td>
+                    <td id="F7" class="caseBlanche"></td>
+                    <td id="G7" class="caseGrise"></td>
+                    <td id="H7" class="caseBlanche"></td>
                 </tr>
                 <tr>
                     <th>6</th>
@@ -117,57 +85,25 @@
                 </tr>
                 <tr>
                     <th>2</th>
-                    <td id="A2" class="caseBlanche">
-                        <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 1" id="pb1" />
-                    </td>
-                    <td id="B2" class="caseGrise">
-                        <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 2" id="pb2" />
-                    </td>
-                    <td id="C2" class="caseBlanche">
-                        <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 3" id="pb3" />
-                    </td>
-                    <td id="D2" class="caseGrise">
-                        <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 4" id="pb4" />
-                    </td>
-                    <td id="E2" class="caseBlanche">
-                        <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 5" id="pb5" />
-                    </td>
-                    <td id="F2" class="caseGrise">
-                        <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 6" id="pb6" />
-                    </td>
-                    <td id="G2" class="caseBlanche">
-                        <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 7" id="pb7" />
-                    </td>
-                    <td id="H2" class="caseGrise">
-                        <img class="piece" src="./images/Pion_blanc.png" alt="Pion Blanc 8" id="pb8" />
-                    </td>
+                    <td id="A2" class="caseBlanche"></td>
+                    <td id="B2" class="caseGrise"></td>
+                    <td id="C2" class="caseBlanche"></td>
+                    <td id="D2" class="caseGrise"></td>
+                    <td id="E2" class="caseBlanche"></td>
+                    <td id="F2" class="caseGrise"></td>
+                    <td id="G2" class="caseBlanche"></td>
+                    <td id="H2" class="caseGrise"></td>
                 </tr>
                 <tr>
                     <th>1</th>
-                    <td id="A1"  class="caseGrise">
-                        <img class="piece" src="./images/Tour_blanc.png" alt="Tour Blanc 1" id="tb1"/>
-                    </td>
-                    <td id="B1" class="caseBlanche">
-                        <img class="piece" src="./images/Canasson_blanc.png" alt="Canasson Blanc 1" id="cb1"/>
-                    </td>
-                    <td id="C1" class="caseGrise">
-                        <img class="piece" src="./images/Fou_blanc.png" alt="Fou Blanc 1" id="fb1"/>
-                    </td>
-                    <td id="D1" class="caseBlanche">
-                        <img class="piece" src="./images/Dame_blanc.png" alt="Dame Blanc" id="db"/>
-                    </td>
-                    <td id="E1" class="caseGrise">
-                        <img class="piece" src="./images/Roi_blanc.png" alt="Roi Blanc" id="rb"/>
-                    </td>
-                    <td id="F1" class="caseBlanche">
-                        <img class="piece" src="./images/Fou_blanc.png" alt="Fou Blanc 2" id="fb2"/>
-                    </td>
-                    <td id="G1" class="caseGrise">
-                        <img class="piece" src="./images/Canasson_blanc.png" alt="Canasson Blanc 2" id="cb2"/>
-                    </td>
-                    <td id="H1" class="caseBlanche">
-                        <img class="piece" src="./images/Tour_blanc.png" alt="Tour Blanc 2" id="tb2"/>
-                    </td>
+                    <td id="A1"  class="caseGrise"></td>
+                    <td id="B1" class="caseBlanche"></td>
+                    <td id="C1" class="caseGrise"></td>
+                    <td id="D1" class="caseBlanche"></td>
+                    <td id="E1" class="caseGrise"></td>
+                    <td id="F1" class="caseBlanche"></td>
+                    <td id="G1" class="caseGrise"></td>
+                    <td id="H1" class="caseBlanche"></td>
                 </tr>
                 <tr>
                     <th></th>
@@ -180,7 +116,7 @@
                     <th>G</th>
                     <th>H</th>
                 </tr>
-            </table>
+            </table>                     
         </div>
         
         <div id="info">
