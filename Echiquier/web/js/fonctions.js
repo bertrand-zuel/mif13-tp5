@@ -34,11 +34,11 @@ function mettreEnPlace(XMLDoc)
                     $(this).html(' ');
                     //On rajoute la nouvelle image
                     ui.draggable.appendTo($(this)).css({left: '0px', top:  '0px'})
+                    var caseCible = $(this).attr('id');
+                    var idPieceDep = $(this).children('img').attr('id'); 
                 }
-                else
-                {
-                    ui.draggable.draggable({revert:true});
-                }
+                else                
+                    ui.draggable.draggable({revert:true});               
             }
         })
     });
@@ -82,11 +82,10 @@ function traiteXML(XMLDoc)
     // On définit la taille de chaque image avec les valeurs ci-dessus et on rajouter l'attribut draggable pour qu'elles puissent être déplacées
     $("img").each(function(){
         $(this).attr('width', largeurCellule).attr('height', hauteurCellule);
-       
-        if (peutJouer == 'true' && $(this).attr('class').substring(5,10) == couleur.substring(1,6))
+        
+        if (peutJouer== ' true' && $(this).attr('class').substring(5,10) == couleur.substring(1,6))
             $(this).draggable({containment:"#echiquier", scroll: false});
     });
-    alert(peutJouer);
 }
 
 function rafraichissement()

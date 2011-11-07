@@ -60,13 +60,13 @@
                 <%}%>
                 <% if(nbJoueurs == 1){%>
                     <label for="couleur">Quelle couleur voulez-vous?</label>
-                    <% if(couleurChoisie.equals("blanche")){%>
+                    <% if(couleurChoisie.equals("Blanche")){%>
                     <select name="couleur" id="couleur">
-                        <option value="noire">Noire</option>
+                        <option value="Noire">Noire</option>
                     </select>
                     <%}else{%>
                         <select name="couleur" id="couleur">
-                            <option value="blanche">Blanche</option>
+                            <option value="Blanche">Blanche</option>
                         </select>
                     <%}%>
                     <br /> <br />
