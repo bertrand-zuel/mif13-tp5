@@ -130,4 +130,26 @@ public class Echiquier {
         
         return echiquierXml;
     }
+    
+    public Position getCasedePiece(String idPiece)
+    {
+        Position coord = new Position (-1, -1);;
+        for (int y=0; y<8; y++)
+        {
+            for (int x=0; x<8;x++)
+            {
+                if (plateau[x][y].getIdPiece().equals(idPiece))
+                    coord.setPosition (x, y);
+            }
+        }
+        return coord;
+    }
+    
+    public void deplacement(String idPiece, String idCaseCible){
+        Position positionCible = getCoordonnees(idCaseCible);
+        Position positionDepart = getCasedePiece(idPiece);
+        
+        this.plateau[positionDepart.getX()][positionDepart.getY()].setIdPiece("");
+        this.plateau[positionCible.getX()][positionCible.getY()].setIdPiece(idPiece);
+    }
 }

@@ -36,6 +36,7 @@ function mettreEnPlace(XMLDoc)
                     ui.draggable.appendTo($(this)).css({left: '0px', top:  '0px'})
                     var caseCible = $(this).attr('id');
                     var idPieceDep = $(this).children('img').attr('id'); 
+                    sendRequestAsynchroneously('POST', 'gestion/deplacement.jsp', "idPiece="+idPieceDep+"&idCaseCible="+caseCible);
                 }
                 else                
                     ui.draggable.draggable({revert:true});               
@@ -51,7 +52,7 @@ function mettreEnPlace(XMLDoc)
         })
     });
     //Pour le rafraichissement
-    //rafraichissement();
+    rafraichissement();
 }
 
 function traiteXML(XMLDoc)
@@ -64,16 +65,17 @@ function traiteXML(XMLDoc)
     for(var i = 0; i < nbCases; i++)
     {
        idPiece = '';
+
        if(echiquier[0].childNodes[i].hasChildNodes())
            idPiece = echiquier[0].childNodes[i].firstChild.nodeValue;
 
-       if (idPiece != ''){
-            //$('#'+idPiece).
-       }
        idCase = echiquier[0].childNodes[i].getAttribute("id");
+       $('#'+idCase).html(' ');
        if (idPiece != '')
-        $('#'+idCase).append(tableauImages[idPiece]);
-
+       {
+            $('#'+idCase).append(tableauImages[idPiece]);
+       }    
+       
     }
    // Taille d'une image en fonction de la taille de notre échiquier
     var largeurCellule = $('#echiquier').attr('width') * 0.085;
@@ -90,7 +92,7 @@ function traiteXML(XMLDoc)
 
 function rafraichissement()
 {
-    setTimeout("loadXMLAsynchroneously('POST', '../gestion/tour.jsp', null, null);", 1000);
+    setTimeout("loadXMLAsynchroneously('POST', './gestion/tour.jsp', null, null);", 5000);
 }
 
 

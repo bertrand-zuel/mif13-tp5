@@ -53,4 +53,11 @@ public class ControlePartie{
         
         return peutJouer;
     }
+    
+    public void deplacement(){
+        if(this.tourJeu == 0)
+            this.tourJeu = 1;
+        else
+            this.tourJeu = 0;
+    }
 }
