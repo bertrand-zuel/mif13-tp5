@@ -60,4 +60,8 @@ public class ControlePartie{
         else
             this.tourJeu = 0;
     }
+    
+    public int getTourJeu(){
+        return this.tourJeu;
+    }
 }
