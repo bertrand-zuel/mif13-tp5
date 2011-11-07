@@ -7,6 +7,7 @@
 
 <tour>
     <peutjouer> <% out.print(cP.peutJouer(moi)); %></peutjouer>
+    <couleur> <% out.print(moi.getCouleur()); %></couleur>
     <joueur> <% out.print(session.getAttribute("pseudo"));%> </joueur>
     <% out.print(Ec.echiquierToXml());  %>
 </tour>

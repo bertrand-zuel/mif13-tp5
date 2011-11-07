@@ -59,6 +59,7 @@ function traiteXML(XMLDoc)
     var pseudo = XMLDoc.getElementsByTagName("joueur")[0].firstChild.nodeValue;
     var peutJouer = XMLDoc.getElementsByTagName("peutjouer")[0].firstChild.nodeValue;
     var echiquier = XMLDoc.getElementsByTagName("echiquier");
+    var couleur = XMLDoc.getElementsByTagName("couleur")[0].firstChild.nodeValue;
     var nbCases = echiquier[0].childNodes.length;
     for(var i = 0; i < nbCases; i++)
     {
@@ -81,8 +82,11 @@ function traiteXML(XMLDoc)
     // On définit la taille de chaque image avec les valeurs ci-dessus et on rajouter l'attribut draggable pour qu'elles puissent être déplacées
     $("img").each(function(){
         $(this).attr('width', largeurCellule).attr('height', hauteurCellule);
-        $(this).draggable({containment:"#echiquier", scroll: false});
+       
+        if (peutJouer == 'true' && $(this).attr('class').substring(5,10) == couleur.substring(1,6))
+            $(this).draggable({containment:"#echiquier", scroll: false});
     });
+    alert(peutJouer);
 }
 
 function rafraichissement()
@@ -95,7 +99,7 @@ function rafraichissement()
 var tableauImages = new Object();
 for(var i = 1 ; i < 9 ; ++i)
 {
-    tableauImages["pb"+i] = '<img class="pieceBlanche" src="./images/Pion_blanc.png" alt="Pion Blanc '+i+'" id="pb'+i+'" />';
+    tableauImages["pb"+i] = '<img class="pieceBlanc" src="./images/Pion_blanc.png" alt="Pion Blanc '+i+'" id="pb'+i+'" />';
     tableauImages["pn"+i] = '<img class="pieceNoire" src="./images/Pion_noir.png" alt="Pion Noir '+i+'" id="pn'+i+'" />';
 }
 
@@ -108,11 +112,11 @@ tableauImages["fn2"]= '<img class="pieceNoire" src="./images/Fou_noir.png" alt="
 tableauImages["cn2"]= '<img class="pieceNoire" src="./images/Canasson_noir.png" alt="Canasson Noir 2" id="cn2" />';
 tableauImages["tn2"]= '<img class="pieceNoire" src="./images/Tour_noir.png" alt="Tour Noir 2" id="tn2" /> '; 
 
-tableauImages["tb1"]= '<img class="pieceBlanche" src="./images/Tour_blanc.png" alt="Tour Blanc 1" id="tb1" /> ';                 
-tableauImages["cb1"]= '<img class="pieceBlanche" src="./images/Canasson_blanc.png" alt="Canasson Blanc 1" id="cb1" />';                     
-tableauImages["fb1"]= '<img class="pieceBlanche"  src="./images/Fou_blanc.png" alt="Fou Blanc 2" id="fb1" />';                       
-tableauImages["db"]= '<img class="pieceBlanche" src="./images/Dame_blanc.png" alt="Dame Blanc" id="db" /> ';                   
-tableauImages["rb"]= '<img class="pieceBlanche" src="./images/Roi_blanc.png" alt="Roi Blanc" id="rb" /> ';                      
-tableauImages["fb2"]= '<img class="pieceBlanche" src="./images/Fou_blanc.png" alt="Fou Blanc 2" id="fb2" />';            
-tableauImages["cb2"]= '<img class="pieceBlanche" src="./images/Canasson_blanc.png" alt="Canasson Blanc 2" id="cb2" />';
-tableauImages["tb2"]= '<img class="pieceBlanche" src="./images/Tour_blanc.png" alt="Tour Blanc 2" id="tb2" /> '; 
+tableauImages["tb1"]= '<img class="pieceBlanc" src="./images/Tour_blanc.png" alt="Tour Blanc 1" id="tb1" /> ';                 
+tableauImages["cb1"]= '<img class="pieceBlanc" src="./images/Canasson_blanc.png" alt="Canasson Blanc 1" id="cb1" />';                     
+tableauImages["fb1"]= '<img class="pieceBlanc"  src="./images/Fou_blanc.png" alt="Fou Blanc 2" id="fb1" />';                       
+tableauImages["db"]= '<img class="pieceBlanc" src="./images/Dame_blanc.png" alt="Dame Blanc" id="db" /> ';                   
+tableauImages["rb"]= '<img class="pieceBlanc" src="./images/Roi_blanc.png" alt="Roi Blanc" id="rb" /> ';                      
+tableauImages["fb2"]= '<img class="pieceBlanc" src="./images/Fou_blanc.png" alt="Fou Blanc 2" id="fb2" />';            
+tableauImages["cb2"]= '<img class="pieceBlanc" src="./images/Canasson_blanc.png" alt="Canasson Blanc 2" id="cb2" />';
+tableauImages["tb2"]= '<img class="pieceBlanc" src="./images/Tour_blanc.png" alt="Tour Blanc 2" id="tb2" /> '; 

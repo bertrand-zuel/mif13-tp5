@@ -52,8 +52,8 @@
                 <% if(nbJoueurs == 0){%>
                     <label for="couleur">Quelle couleur voulez-vous?</label>
                     <select name="couleur" id="couleur">
-                        <option value="blanche">Blanche</option>
-                        <option value="noire">Noire</option>
+                        <option value="Blanche">Blanche</option>
+                        <option value="Noire">Noire</option>
                     </select>
                     <br /> <br />
                     <input type="submit" value="Demarrer une nouvelle partie"/>

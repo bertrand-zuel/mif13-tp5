@@ -63,7 +63,7 @@ function getXMLDocument(xhr, XMLDoc, id)
 		//teste si le code de statut est autre que le code renvoyÈ en cas d'absence de nouveaux messages.
 		//Remarque : le code 1223 provient d'un bug avec IE : http://trac.dojotoolkit.org/ticket/2418
 		} else if (xhr.status != 204 && xhr.status != 1223) {
-		   alert("Un problËme est survenu avec la requÍte : ");
+		   alert("Un probleme est survenu avec la requete : ");
         }
 	}
 }
