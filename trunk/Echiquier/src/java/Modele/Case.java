@@ -29,4 +29,8 @@ public class Case {
     public String caseToXml(){
         return "<case id=\""+this.idCase+"\">"+this.idPiece+"</case>";
     }
+    
+    public void setIdPiece(String idPiece){
+        this.idPiece = idPiece;
+    }
 }
